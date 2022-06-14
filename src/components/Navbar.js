@@ -1,8 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import "../components/Styles/Styles.css"
 
-const Header = ({ siteTitle }) => {
+const Navbar = ({ siteTitle }) => {
   const navLinks = [
     {
       title: "link1",
@@ -35,6 +36,7 @@ const Header = ({ siteTitle }) => {
         alignItems: `center`,
         justifyContent: `space-between`,
       }}
+      className={"navbar"}
     >
       <img
         alt="Gatsby logo"
@@ -44,8 +46,7 @@ const Header = ({ siteTitle }) => {
       />
 
       {navLinks.map(links => {
-
-        const {title, url} = links
+        const { title, url } = links
         return (
           <Link
             to="/"
@@ -53,6 +54,7 @@ const Header = ({ siteTitle }) => {
               fontSize: `var(--font-sm)`,
               textDecoration: `none`,
             }}
+            className="nav-links"
           >
             {title}
           </Link>
@@ -72,12 +74,12 @@ const Header = ({ siteTitle }) => {
   )
 }
 
-Header.propTypes = {
+Navbar.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Navbar.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Navbar

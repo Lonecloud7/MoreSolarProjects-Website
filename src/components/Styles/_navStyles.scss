@@ -1,0 +1,30 @@
+@import "utilities";
+
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-links {
+  color: $nav-color;
+  font-size: $nav-font-size;
+}
+
+.navbar .nav-links a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translatex(-50%);
+  background-color: $nav-color;
+  transition: width 0.5s;
+}
+
+.nav-links a:hover::after {
+  width: 50%;
+}

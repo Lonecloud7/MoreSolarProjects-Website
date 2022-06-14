@@ -43,7 +43,7 @@ body {
   margin: 0;
   word-wrap: break-word;
 }
-a {
+/* a {
   background-color: transparent;
   color: var(--color-primary);
   text-decoration: none;
@@ -56,7 +56,7 @@ a:active,
 a:hover {
   outline-width: 0;
   text-decoration: none;
-}
+} */
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
