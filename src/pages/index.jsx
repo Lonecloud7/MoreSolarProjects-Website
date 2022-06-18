@@ -75,9 +75,9 @@ const IndexPage = () => (
     <Seo title="Home" />
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/heading.jpg"
         loading="eager"
-        width={64}
+        width={1920}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
@@ -105,7 +105,7 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
           >
-            {link.text} ↗
+            {link.text}
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../components/Styles/Styles.css"
+import "../components/Styles/Styles.scss"
 
 const Destination = () => (
   <Layout>
@@ -14,6 +14,8 @@ const Destination = () => (
     Destination Nigga
     </h1>
     <Link to="/">Go back to the homepage</Link>
+    <br />
+    <Link to="/company/history">Go to history</Link>
   </Layout>
 )
 
