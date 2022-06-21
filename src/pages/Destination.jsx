@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../components/Styles/Styles.scss"
 
 const Destination = () => (
   <Layout>

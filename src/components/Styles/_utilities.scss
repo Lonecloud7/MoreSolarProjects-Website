@@ -1,5 +1,7 @@
 $font-family:'Dosis', sans-serif;
 
+//colors!!
+
 $background-color:#e8effd;
 
 $nav-background:white;
@@ -8,6 +10,34 @@ $nav-font-size:17px;
 
 $nav-color:#0137a7;
 
+$nav-color_dark:#012369;
+
+$nav-color_light:#0757f7;
+
+$test-color:rgb(172, 229, 252);
+
 $boxShadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
 
 $textShadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+
+//fonts
+$fontSans:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+$fontMono:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+"Courier New", monospace;
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg:32px;
+
+//query
+
+@mixin breakpoint($point){
+    @if $point == md {
+        //768px
+        @media (min-width:48em){
+            @content;
+        }
+    }
+}
