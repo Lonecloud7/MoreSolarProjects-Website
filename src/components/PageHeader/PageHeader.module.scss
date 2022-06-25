@@ -1,0 +1,9 @@
+@import "../Styles/utilities";
+@import "../Styles/globals";
+
+.Header{
+    width: 100%;
+    height: $header-hth;
+    background-color: black;
+    color: white;
+}

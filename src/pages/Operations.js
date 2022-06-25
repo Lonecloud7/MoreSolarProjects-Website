@@ -1,9 +1,12 @@
 import React from 'react'
 import Layout from "../components/layout"
+import PageHeader from "../components/PageHeader/PageHeader"
 
 const Operations = () => {
   return (
-    <Layout><div>Operations</div></Layout>
+    <Layout>
+    <PageHeader title={"Operations"} />
+  </Layout>
     
   )
 }
