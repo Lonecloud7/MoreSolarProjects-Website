@@ -1,11 +1,10 @@
-@import "../Styles/utilities";
-@import "../Styles/globals";
+@import "/src/Styles/Styles";
 
 .Navbar {
-  background-color: rgb(172, 229, 252);
+  background-color: $font-color_dark;
   padding: 0 1.5rem;
   width: 100%;
-  @include breakpoint(md) {
+  @include breakpoint-md(md) {
     padding: 0 3rem;
   }
   transition: 0.3s ease all;
@@ -26,7 +25,7 @@
     top: 0;
     right: 100%;
     bottom: 0;
-    width: 100%;
+    width: 85%;
     height: 100vh;
     position: fixed;
     margin: auto;
@@ -35,13 +34,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background:rgba($nav-color_light, 0.9) ;
+    background:rgba($font-color_light, 0.9) ;
     backdrop-filter: blur(2px);
     transform: translate(0);
     transition: 0.5s ease transform;
-    font-size:15px;
+    font-size:20px;
 
-    @include breakpoint(md) {
+    @include breakpoint-md(md) {
       transform: none;
       flex-direction: row;
       background-color: transparent;
@@ -55,7 +54,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom:$spacing-lg ;
-      @include breakpoint(md) {
+      @include breakpoint-md(md) {
         flex-direction: row;
         align-items: center;
         margin-bottom: 0;
@@ -66,7 +65,7 @@
 
         &:mot(:last-child) {
             // margin-bottom: $spacing-lg;
-            @include breakpoint(md) {
+            @include breakpoint-md(md) {
                 margin-bottom:0;
                 margin-right: $spacing-md;
             }
@@ -77,20 +76,20 @@
           padding: 0.75rem 1.25rem;
           border-radius: 15px;
           transition: 0.3s ease all;
-          text-decoration: none;
-          color: $nav-color;
+          font-weight:bold;
+          color: $font-color;
           
 
           &:hover {
-            background: rgba($nav-color_light, 0.1);
+            color: $font-color-active;
           }
-          &:active{
-            border-radius: calc(#{15px} + 6px);
-            background: linear-gradient(
-              rgba($nav-color_light, 0.1),
-              rgba($nav-color_light, 0.2)
-            );
-          }
+          // &:active{
+          //   border-radius: calc(#{15px} + 6px);
+          //   background: linear-gradient(
+          //     rgba($font-color_light, 0.1),
+          //     rgba($font-color_light, 0.2)
+          //   );
+          // }
         }
       }
     }
@@ -102,24 +101,27 @@
       border-radius: 15px;
       font-size: 1rem;
       font-family: inherit;
-      color: $nav-color;
+      color: $font-color;
       border: 1px solod transparent;
       transition: 0.3s ease all;
     }
 
-    &:hover {
-      border-color: $nav-color;
-      background-color: $test-color;
-      color: $nav-color;
-    }
-    &:active {
-      border-color: $nav-color;
-      background: linear-gradient(
-        rgba($nav-color_light, 0.1),
-        rgba($nav-color_light, 0.2)
-      );
-      color: $nav-color;
-    }
+    //CAUSED ISSUES ON HOVER and ACTIVE SLIDE
+
+    // &:hover {
+    //   border-color: $nav-color;
+    //   background-color: $nav-color_light;
+    //   color: $nav-color;
+    // }
+
+    // &:active {
+    //   border-color: $nav-color;
+    //   background: linear-gradient(
+    //     rgba($nav-color_light, 0.1),
+    //     rgba($nav-color_light, 0.2)
+    //   );
+    //   color: $nav-color;
+    // }
 
     &.isMenu {
       transform: translate(100%);
@@ -133,12 +135,13 @@
     font-size: 2rem;
     transition: 0.3s ease all;
     position: relative;
+    color: $font-color;
 
     &:hover {
-      color: $nav-color;
+      color: $font-color-active;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint-md(md) {
       display: none;
     }
   }

@@ -1,4 +1,12 @@
+
+// @import "globals";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 $font-family:'Dosis', sans-serif;
+
+$font-gothic:'Didact Gothic', sans-serif;
 
 //colors!!
 
@@ -8,13 +16,13 @@ $nav-background:white;
 
 $nav-font-size:17px;
 
-$nav-color:#0137a7;
+$font-color:#2F662D;
 
-$nav-color_dark:#012369;
+$font-color_dark:#222E50;
 
-$nav-color_light:#0757f7;
+$font-color_light:#ACB0BD;
 
-$test-color:rgb(172, 229, 252);
+$font-color-active:#489946;
 
 $boxShadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
 
@@ -38,10 +46,28 @@ $header-hth:350px;
 
 //query
 
-@mixin breakpoint($point){
+@mixin breakpoint-sd($point){
+    @if $point == sd {
+        //640px
+        @media (min-width:40em){
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint-md($point){
     @if $point == md {
         //768px
         @media (min-width:48em){
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint-ld($point){
+    @if $point == ld {
+        //1008px
+        @media (min-width:63em){
             @content;
         }
     }

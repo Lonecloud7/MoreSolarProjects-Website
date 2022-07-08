@@ -1,0 +1,65 @@
+@import "/src/Styles/Styles";
+
+footer {
+  width: auto;
+  margin-top: 50px;
+  height: 400px;
+  background-color: #0137a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footercont {
+  /* width:100%; */
+  background-color: #0137a7;
+  height: 350px;
+  margin: 40px 20px;
+}
+
+.footercont #logo2 {
+  padding: 10px 40px;
+  width: 180px;
+  height: 70px;
+}
+
+.footercont .border {
+  background-color: grey;
+  border-radius: 2px;
+  height: 2px;
+  width: 95%;
+  margin-left: 22px;
+}
+
+/* FOOTER LINKS */
+
+.footerlinks {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerlinks ul {
+  margin: 30px 40px;
+  line-height: 15px;
+  list-style: none;
+}
+
+.footerlinks ul .foothead {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.footerlinks ul li a {
+  margin: 0px;
+  line-height: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footerlinks ul li a:hover {
+  text-decoration: underline;
+  transition: border 0.5s;
+}

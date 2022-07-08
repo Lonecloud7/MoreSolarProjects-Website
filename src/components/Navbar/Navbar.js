@@ -80,6 +80,8 @@ const Navbar = () => {
             </ul>
           </div>
 
+          <button>action</button>
+
           <div
             className={classes.Navbar__toggle}
             onClick={() => {
