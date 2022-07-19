@@ -1,65 +1,87 @@
 @import "/src/Styles/Styles";
 
 footer {
-  width: auto;
-  margin-top: 50px;
-  height: 400px;
-  background-color: #0137a7;
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+  height: auto;
+  background-color: $font-color_dark;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-}
+  overflow: hidden;
 
-.footercont {
-  /* width:100%; */
-  background-color: #0137a7;
-  height: 350px;
-  margin: 40px 20px;
-}
+  .footercont {
+    // width: 100%;
 
-.footercont #logo2 {
-  padding: 10px 40px;
-  width: 180px;
-  height: 70px;
-}
+    background-color: $font-color_dark;
+    height: auto;
+    margin: 40px 20px;
+    #logo2 {
+      padding: 10px 40px;
+      width: 180px;
+      height: 70px;
+    }
 
-.footercont .border {
-  background-color: grey;
-  border-radius: 2px;
-  height: 2px;
-  width: 95%;
-  margin-left: 22px;
+    .border {
+      display: flex;
+      justify-content: center;
+      background-color: grey;
+      border-radius: 2px;
+      height: 2px;
+      width: 100%;
+    }
+  }
 }
 
 /* FOOTER LINKS */
 
 .footerlinks {
-  display: flex;
-  justify-content: center;
   width: 100%;
-}
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  color: $font-color;
 
-.footerlinks ul {
-  margin: 30px 40px;
-  line-height: 15px;
-  list-style: none;
-}
+  @include breakpoint-md(md) {
+    display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        color: $font-color;
+  }
 
-.footerlinks ul .foothead {
-  font-size: 25px;
-  margin-bottom: 15px;
-}
+  .symbol {
+    width: 400px;
+    p {
+      color: white;
+    }
+  }
 
-.footerlinks ul li a {
-  margin: 0px;
-  line-height: 30px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
+  .address {
+    p {
+      color: white;
+    }
+  }
+  ul {
+    margin: 30px 40px;
+    line-height: 15px;
+    list-style: none;
 
-.footerlinks ul li a:hover {
-  text-decoration: underline;
-  transition: border 0.5s;
+    .foothead {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    li a {
+      margin: 0px;
+      line-height: 30px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+
+      &:hover {
+        color: $font-color-active;
+        transition: color 0.2s;
+      }
+    }
+  }
 }

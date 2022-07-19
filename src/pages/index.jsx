@@ -99,22 +99,16 @@ const IndexPage = () => (
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       /> */}
-
-      {moreLinks.map((link, i) => (
-        <React.Fragment key={link.url}>
-          <a href={`${link.url}`}>{link.text}</a>
-          {i !== moreLinks.length - 1 && <> · </>}
-        </React.Fragment>
-      ))}
     </div>
     <div className={styles.FlexCard}>
       <div className={styles.FlexCard__content}>
         <div className={styles.FlexCard__content__text}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            esse incidunt officia vero consequuntur enim laboriosam harum fugit
-            atque itaque?vero consequuntur enim
-          </p>
+          <h2>Lorem ipsum dolor</h2>
+          <article>
+            sit amet consectetur adipisicing elit. Voluptates esse incidunt
+            officia vero consequuntur enim laboriosam harum fugit atque
+            itaque?vero consequuntur enim
+          </article>
         </div>
         <div className={styles.FlexCard__content__img}>
           <StaticImage
@@ -127,11 +121,7 @@ const IndexPage = () => (
             style={{ marginBottom: `var(--space-3)` }}
           />
         </div>
-      </div>
-    </div>
 
-    <div className={styles.FlexCard}>
-      <div className={styles.FlexCard__content}>
         <div className={styles.FlexCard__content__img}>
           <StaticImage
             src="../images/heading.jpg"
@@ -144,13 +134,29 @@ const IndexPage = () => (
           />
         </div>
         <div className={styles.FlexCard__content__text}>
-          <p>
+          <h2>Lorem ipsum dolor</h2>
+          <article>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             esse incidunt officia vero consequuntur enim laboriosam harum fugit
             atque itaque?vero consequuntur enim
-          </p>
+          </article>
         </div>
       </div>
+    </div>
+
+    <div className={styles.newsletter}>
+      <form onSubmit={e => e.preventDefault()} className={styles.newsinput}>
+        <div>
+          <h3>SUBSRCRIBE OUR NEWSLETTER</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam!
+          </p>
+          <input type="text" placeholder="Your Email here" />
+          <br />
+          <br />
+          <input type="submit" className={styles.newsbtn} />
+        </div>
+      </form>
     </div>
   </Layout>
 )

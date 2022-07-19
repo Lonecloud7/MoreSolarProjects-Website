@@ -1,5 +1,6 @@
 import React from "react"
 import * as styles from "./Footer.module.scss"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -18,79 +19,50 @@ const Footer = () => {
           <div className={styles.border}></div>
 
           <div className={styles.footerlinks}>
-            <div id="footlist1">
+            <div className={styles.symbol}>
               <ul>
                 <li className={styles.foothead}>About us</li>
                 <li>
-                  <a href="">our story</a>
-                </li>
-                <li>
-                  <a href="">media center</a>
-                </li>
-                <li>
-                  <a href="">careers</a>
-                </li>
-              </ul>
-            </div>
-            <div id="footlist2">
-              <ul>
-                <li className={styles.foothead}>Support</li>
-                <li>
-                  <a href="">help and contact</a>
-                </li>
-                <li>
-                  <a href="">before you book</a>
-                </li>
-                <li>
-                  <a href="">at the airport</a>
-                </li>
-                <li>
-                  <a href="">lost policy</a>
-                </li>
-                <li>
-                  <a href="">customer service</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    velit in magni id doloribus dolore voluptates sunt quod
+                    iusto error!velit in magni id doloribus dolore voluptates
+                    sunt quod iusto error!
+                  </p>
                 </li>
               </ul>
             </div>
-            <div id="footlist3">
+            <div className={styles.quickLinks}>
               <ul>
-                <li className={styles.foothead}>Policies</li>
+                <li className={styles.foothead}>Quick Links</li>
                 <li>
-                  <a href="">conditions</a>
+                  <Link to="/Aboutus">About us</Link>
                 </li>
                 <li>
-                  <a href="">delay plan</a>
+                  <Link to="/Leadership">Leadership</Link>
+                </li>
+                <li>
+                  <Link to="/Operations">Operations</Link>
+                </li>
+                <li>
+                  <Link to="/Contactus">Contact us</Link>
                 </li>
               </ul>
             </div>
-            <div id="footlist4">
+            <div className={styles.address}>
               <ul>
-                <li className={styles.foothead}>Where we fly</li>
+                <li className={styles.foothead}>Oil company</li>
                 <li>
-                  <a href="">route map</a>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
                 </li>
                 <li>
-                  <a href="">africa</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque
+                  </p>
                 </li>
                 <li>
-                  <a href="">europe</a>
-                </li>
-                <li>
-                  <a href="">asia</a>
-                </li>
-              </ul>
-            </div>
-            <div id="footlist5">
-              <ul>
-                <li className={styles.foothead}>Manage</li>
-                <li>
-                  <a href="">check-in</a>
-                </li>
-                <li>
-                  <a href="">manage your booking</a>
-                </li>
-                <li>
-                  <a href="">flight status</a>
+                  <p>Lorem ipsum dolor</p>
                 </li>
               </ul>
             </div>
