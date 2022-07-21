@@ -11,7 +11,7 @@ const Contactus = () => {
       <PageHeader title={"Contact us"} />
 
       <div className={styles.pageNav}>
-        <Link to="/">Home</Link>/<Link>{pageName}</Link>
+        <Link to="/">Home</Link>/<Link to="/Contactus">{pageName}</Link>
       </div>
     </Layout>
   )

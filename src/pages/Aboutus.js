@@ -12,7 +12,7 @@ const Aboutus = () => {
       <PageHeader title={"About us"} />
 
       <div className={styles.pageNav}>
-        <Link to="/">Home</Link>/<Link>{pageName}</Link>
+        <Link to="/">Home</Link>/<Link to="/Aboutus">{pageName}</Link>
       </div>
 
       <div className={styles.pageText}>
@@ -76,29 +76,29 @@ const Aboutus = () => {
               <li>Lorem ipsum dolor sit.</li>
             </ul>
           </div>
-          
-            <div className={styles.FlexCard__content}>
-              <div className={styles.FlexCard__content__text}>
-                <h2>Lorem ipsum dolor</h2>
-                <article>
-                  sit amet consectetur adipisicing elit. Voluptates esse
-                  incidunt officia vero consequuntur enim laboriosam harum fugit
-                  atque itaque?vero consequuntur enim
-                </article>
-              </div>
-              <div className={styles.FlexCard__content__img}>
-                <StaticImage
-                  src="../images/heading.jpg"
-                  loading="eager"
-                  width={650}
-                  height={450}
-                  quality={95}
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                  style={{ marginBottom: `var(--space-3)` }}
-                />
-              </div>
-            </div>
+        </div>
+      </div>
+      <div className={styles.pageText__flexCard}>
+        <div className={styles.FlexCard__content}>
+          <div className={styles.FlexCard__content__text}>
+            <h2>Lorem ipsum dolor</h2>
+            <article>
+              sit amet consectetur adipisicing elit. Voluptates esse incidunt
+              officia vero consequuntur enim laboriosam harum fugit atque
+              itaque?vero consequuntur enim
+            </article>
+          </div>
+          <div className={styles.FlexCard__content__img}>
+            <StaticImage
+              src="../images/heading.jpg"
+              loading="eager"
+              width={1920}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt=""
+              style={{ marginBottom: `var(--space-3)` }}
+            />
+          </div>
         </div>
       </div>
     </Layout>

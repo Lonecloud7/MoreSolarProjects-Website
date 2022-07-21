@@ -1,0 +1,15 @@
+.Avatar{
+    width: 350px;
+    background-color: gray;
+
+    &__content{
+        padding: 10px;
+        width: 100%;
+    }
+    &__img{
+        img{
+            width: 100%;
+            height: 320px;
+        }
+    }
+}
