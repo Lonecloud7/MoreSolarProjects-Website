@@ -127,3 +127,25 @@
     color: #0137a7;
   }
 }
+
+.pageText {
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+  &__content {
+  }
+  &__header {
+  }
+  &_quote {
+  }
+  &__passage {
+  }
+  &__listHead {
+  }
+  &__listItem {
+  }
+  &__list {
+  }
+  &__img {
+  }
+}

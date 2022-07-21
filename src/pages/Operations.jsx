@@ -13,6 +13,7 @@ const Operations = () => {
       <div className={styles.pageNav}>
         <Link to="/">Home</Link>/<Link to="/Operations">{pageName}</Link>
       </div>
+      
     </Layout>
   )
 }
