@@ -1,11 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "./Hero_img.module.scss"
 
 const Hero_img = () => {
   return (
     <>
       <div className={styles.Hero}>
+        <StaticImage
+          src="./hero2.jpg"
+          alt=""
+          style={{ position: "absolute" }}
+          className={styles.Hero__backgroundImg}
+        />
         <div className={styles.Hero__content}>
           <div className={styles.Hero__text}>
             <h1>Lorem ipsum dolor sit amet consectetur.</h1>

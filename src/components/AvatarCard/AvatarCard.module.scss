@@ -1,5 +1,18 @@
 @import "/src/Styles/Styles";
 
+.Grid {
+  // height: 85%;
+  width: 90%;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  @include breakpoint-md(md) {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .Avatar {
   width: 320px;
 
@@ -11,19 +24,22 @@
     }
   }
   &__imgContainer {
+    padding: 0px;
+    margin: 0px;
     overflow: hidden;
-    padding: 0;
+    width: 300px;
   }
 
   &__img {
     width: 100%;
-    height: 320px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: transform 0.5s ease;
+
     &:hover {
       transform: scale(1.1);
+      transition: transform 0.5s ease !important;
     }
   }
 
