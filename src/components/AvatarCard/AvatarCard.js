@@ -54,7 +54,7 @@ const AvatarCard = () => {
                       src={require("./avatar2.jpg").default}
                       alt=""
                       style={{ backgroundPosition: "center" }}
-                    /> */}
+                    /> */}d
                     <StaticImage
                       src={img}
                       loading="eager"
