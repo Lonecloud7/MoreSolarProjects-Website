@@ -6,41 +6,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
 
+
+
 const Leadership = () => {
   const pageName = "Leadership"
-
-  const boardMembers = [
-    {
-      img: "https://marketingedge.com.ng/wp-content/uploads/2022/02/E77ACD13-5B1E-43EC-B703-557419BACDE1.jpeg",
-      name: "Lorem ipsum.",
-      title: "CEO",
-    },
-    {
-      img: "https://marketingedge.com.ng/wp-content/uploads/2021/06/Dayo-Adefila.jpg",
-      name: "Lorem ipsum.",
-      title: "Accountant",
-    },
-    {
-      img: "https://nairametrics.com/wp-content/uploads/2021/11/Olu-Akanmu.jpg",
-      name: "Lorem ipsum.",
-      title: "General Counsel",
-    },
-    {
-      img: "../images/leadership/avatar5.jpg",
-      name: "Lorem ipsum.",
-      title: "Non-Executive Director",
-    },
-    {
-      img: "../images/leadership/avatar6.jpg",
-      name: "Lorem ipsum.",
-      title: "Executive Director, Commercial/CFO",
-    },
-    {
-      img: "../images/leadership/avatar7.jpg",
-      name: "Lorem ipsum.",
-      title: "Chairman",
-    },
-  ]
 
   return (
     <Layout>
@@ -100,7 +69,7 @@ const Leadership = () => {
         </div>
       </div>
 
-      <AvatarCard data={boardMembers} />
+      <AvatarCard />
     </Layout>
   )
 }

@@ -9,6 +9,10 @@ const Hero_img = () => {
       <div className={styles.Hero}>
         <StaticImage
           src="./hero2.jpg"
+          loading="eager"
+          width={1920}
+          placeholder="blurred"
+          layout="fullWidth"
           alt=""
           style={{ position: "absolute" }}
           className={styles.Hero__backgroundImg}
