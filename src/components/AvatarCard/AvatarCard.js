@@ -37,6 +37,7 @@ const boardMembers = [
   },
 ]
 
+const test = [{ image2: "../images/leadership/avatar5.jpg" }]
 
 const AvatarCard = () => {
   return (
@@ -50,13 +51,13 @@ const AvatarCard = () => {
               <div className={styles.Avatar__content}>
                 <Link to={"/Leadership"}>
                   <div className={styles.Avatar__imgContainer}>
-                      {/* <img
+                    {/* <img
                       src={require("./avatar2.jpg").default}
                       alt=""
                       style={{ backgroundPosition: "center" }}
                     /> */}
                     <StaticImage
-                      src={img}
+                      src={test}
                       loading="eager"
                       width={1920}
                       quality={95}
@@ -79,6 +80,23 @@ const AvatarCard = () => {
           )
         })}
       </div>
+      {test.map(data => {
+
+        console.log(data.image2)
+        return (
+          <>
+            <StaticImage
+              src={data.image2}
+              loading="eager"
+              width={1920}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt=""
+              style={{ marginBottom: `var(--space-3)` }}
+            />
+          </>
+        )
+      })}
     </>
   )
 }
