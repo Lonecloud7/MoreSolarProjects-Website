@@ -1,6 +1,7 @@
 import React from "react"
 import * as styles from "./AvatarCard.module.scss"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 const boardMembers = [
@@ -36,14 +37,30 @@ const boardMembers = [
   },
 ]
 
-
-
 const AvatarCard = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile {
+        edges {
+          node {
+            base
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  // const image = getImage(data.allFile.edges[0].node)
+
+  console.log(data)
   return (
     <>
       <div className={styles.Grid}>
-        {boardMembers.map((data, index) => {
-          const { img, name, title } = data
+        {boardMembers.map((BoardData, index) => {
+          const { img, name, title } = BoardData
 
           return (
             <div className={styles.Avatar} key={img}>
@@ -55,16 +72,17 @@ const AvatarCard = () => {
                       alt=""
                       style={{ backgroundPosition: "center" }}
                     /> */}
-                    <StaticImage
-                      src={"../images/leadership/avatar6.jpg"}
-                      loading="eager"
-                      width={1920}
-                      quality={95}
-                      formats={["auto", "webp", "avif"]}
-                      alt=""
-                      style={{ marginBottom: `var(--space-3)` }}
-                      className={styles.Avatar__img}
-                    />
+                    {data.allFile.edges.map((img, index) => {
+                      const image = getImage(img.node)
+                      return (
+                        <GatsbyImage
+                          image={image}
+                          loading="eager"
+                          alt=""
+                          className={styles.Avatar__img}
+                        />
+                      )
+                    })}
                   </div>
                 </Link>
 
@@ -79,7 +97,6 @@ const AvatarCard = () => {
           )
         })}
       </div>
-      
     </>
   )
 }
