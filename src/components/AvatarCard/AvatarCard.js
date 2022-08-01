@@ -2,7 +2,6 @@ import React from "react"
 import * as styles from "./AvatarCard.module.scss"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import image from "./avatar2.jpg"
 
 const boardMembers = [
   {
@@ -37,7 +36,7 @@ const boardMembers = [
   },
 ]
 
-const test = [{ image2: "../images/leadership/avatar5.jpg" }]
+
 
 const AvatarCard = () => {
   return (
@@ -57,7 +56,7 @@ const AvatarCard = () => {
                       style={{ backgroundPosition: "center" }}
                     /> */}
                     <StaticImage
-                      src={test}
+                      src={"../images/leadership/avatar6.jpg"}
                       loading="eager"
                       width={1920}
                       quality={95}
@@ -80,23 +79,7 @@ const AvatarCard = () => {
           )
         })}
       </div>
-      {test.map(data => {
-
-        console.log(data.image2)
-        return (
-          <>
-            <StaticImage
-              src={data.image2}
-              loading="eager"
-              width={1920}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt=""
-              style={{ marginBottom: `var(--space-3)` }}
-            />
-          </>
-        )
-      })}
+      
     </>
   )
 }
