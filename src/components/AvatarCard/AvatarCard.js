@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const AvatarCard = () => {
   const data = useStaticQuery(graphql`
-    query {
+    query{
       allFile(
         filter: {
           name: {
@@ -26,7 +26,8 @@ const AvatarCard = () => {
           node {
             base
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(quality: 95, width: 1920)
+              
             }
           }
         }
@@ -78,16 +79,15 @@ const AvatarCard = () => {
           const image = getImage(img)
 
           return (
-            <div className={styles.Avatar} key={name}>
+            <div className={styles.Avatar} key={index}>
               <div className={styles.Avatar__content}>
                 <Link to={"/Leadership"}>
                   <div className={styles.Avatar__imgContainer}>
                     <GatsbyImage
                       image={image}
-                      loading="eager"
                       alt=""
                       className={styles.Avatar__img}
-                      key={index}
+                      loading="eager"
                     />
                   </div>
                 </Link>
