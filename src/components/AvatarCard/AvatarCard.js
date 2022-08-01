@@ -26,7 +26,7 @@ const AvatarCard = () => {
           node {
             base
             childImageSharp {
-              gatsbyImageData(quality: 95, width: 1920)
+              gatsbyImageData
               
             }
           }

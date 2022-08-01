@@ -6,8 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
 
-
-
 const Leadership = () => {
   const pageName = "Leadership"
 
@@ -67,9 +65,8 @@ const Leadership = () => {
             </i>
           </p>
         </div>
+        <AvatarCard />
       </div>
-
-      <AvatarCard />
     </Layout>
   )
 }
