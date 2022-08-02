@@ -88,6 +88,7 @@ const AvatarCard = () => {
                       alt=""
                       className={styles.Avatar__img}
                       loading="eager"
+                      placeholder="blurred"
                     />
                   </div>
                 </Link>

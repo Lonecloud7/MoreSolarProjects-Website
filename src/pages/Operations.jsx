@@ -21,7 +21,7 @@ const Operations = () => {
             <article>
               sit amet consectetur adipisicing elit. Voluptates esse incidunt
               officia vero consequuntur enim laboriosam harum fugit atque
-              itaque?vero consequuntur enim
+              itaque?vero consequuntur enim 
             </article>
             <article>
               sit amet consectetur adipisicing elit. Voluptates esse incidunt
