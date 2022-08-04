@@ -1,35 +1,35 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 import { FaTimes } from "react-icons/fa"
 import * as classes from "./Navbar.module.scss"
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
   const [size, setSize] = useState({
-    width:undefined,
-    height:undefined,
-  });
+    width: undefined,
+    height: undefined,
+  })
 
   useEffect(() => {
-
     const handleSizeChange = () => {
       setSize({
-        width:window.innerWidth,
-        height:window.innerHeight,
+        width: window.innerWidth,
+        height: window.innerHeight,
       })
-    };
-    window.addEventListener("resize", handleSizeChange);
+    }
+    window.addEventListener("resize", handleSizeChange)
 
-    return () => window.removeEventListener("resize", handleSizeChange);
-  },[])
+    return () => window.removeEventListener("resize", handleSizeChange)
+  }, [])
 
   useEffect(() => {
     if (size.width > 768 && menuOpen) {
-      setMenuOpen(false);
+      setMenuOpen(false)
     }
-  }, [size.width, menuOpen]);
+  }, [size.width, menuOpen])
 
   const onChange = () => {
     setMenuOpen(prev => !prev)
@@ -59,7 +59,14 @@ const Navbar = () => {
         <div className={classes.Navbar__content}>
           <div className={classes.Navbar__logo}>
             <Link to={`/`}>
-              <h2>NAVBAR</h2>
+              <StaticImage
+                src="./logo1.png"
+                alt=""
+                loading="eager"
+                placeholder="blurred"
+                width={40}
+                quality={95}
+              />
             </Link>
           </div>
 
@@ -80,7 +87,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <button>action</button>
+          {/* <button>action</button> */}
 
           <div
             className={classes.Navbar__toggle}

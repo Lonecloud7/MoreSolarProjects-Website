@@ -7,19 +7,15 @@ import "./layout.css"
 import "../Styles/Styles.scss"
 
 const Layout = ({ children }) => {
-
   return (
     <>
-      <Navbar/>
-      <div
-      >
+      <Navbar />
+      <div>
         <main>{children}</main>
-        
         <Footer />
       </div>
     </>
   )
 }
-
 
 export default Layout
