@@ -78,7 +78,7 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-      <div className={styles.pageText__flexCard}>
+      <div className={styles.pageText__flex}>
         <div className={styles.FlexCard__content}>
           <div className={styles.FlexCard__content__text}>
             <h2>Lorem ipsum dolor</h2>

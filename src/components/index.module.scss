@@ -131,12 +131,12 @@
 
 .pageText {
   margin: 0 auto;
-  max-width: var(--size-content);
-  padding: var(--size-gutter);
+  max-width: $size-content;
+  padding: $size-gutter;
   &__content {
-    text-align: center;
+    text-align:center;
   }
-  &__flexCard {
+  &__flex {
     display: flex;
     justify-content: center;
     align-items: center;
