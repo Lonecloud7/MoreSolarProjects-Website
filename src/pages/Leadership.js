@@ -11,7 +11,7 @@ const Leadership = () => {
 
   return (
     <Layout>
-      <PageHeader title={"Leadership"} />
+      <PageHeader title={pageName} />
       <div className={styles.pageNav}>
         <Link to="/">Home</Link>/<Link to="/Leadership">{pageName}</Link>
       </div>

@@ -1,17 +1,14 @@
 @import "/src/Styles/Styles";
 
 .list {
-  display: flex;
-  justify-content: center;
-  
-
   display: grid;
+  justify-content: center;
   margin: 0;
-  gap: 10px;
+  grid-gap: 10px;
   grid-template-columns: repeat(1, 1fr);
   // margin-bottom: var(--size-gap);
   margin-top: 25px;
-  // padding: 5px 50px;
+  padding: 10px;
   list-style: none;
   width: 100%;
 
@@ -39,6 +36,7 @@
     // transition: bottom 0.1s linear;
     bottom: 0;
     overflow: hidden;
+    margin-bottom: 10px;
 
     // &:hover {
     //   position: relative;
