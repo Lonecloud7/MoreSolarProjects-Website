@@ -24,15 +24,6 @@ const IndexPage = () => (
         padding: `var(--size-gutter)`,
       }}
     >
-      {/* <StaticImage
-        src="../images/heading.jpg"
-        loading="eager"
-        width={1920}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
     </div>
     <div className={styles.FlexCard}>
       <div className={styles.FlexCard__content}>

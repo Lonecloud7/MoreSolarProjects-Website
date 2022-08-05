@@ -34,15 +34,11 @@
   h2 {
     color: $font-color;
   }
-
-  @include breakpoint-md(md) {
-    p {
-      font-size: 20px;
-    }
+  p {
+    font-size: 20px;
   }
 
   &__content {
-    // background-color: white;
     padding: 20px;
     width: 90%;
     display: grid;
@@ -50,8 +46,28 @@
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
     @include breakpoint-md(md) {
-      display: flex;
-      width: 100%;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__flex {
+      display: grid;
+      justify-content: center;
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      padding:0px 30px;
+      @include breakpoint-md(md) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      h2 {
+        color: $font-color;
+      }
+      p {
+        color: $font-color-text;
+      }
     }
     &__text {
       display: flex;
@@ -62,17 +78,17 @@
       align-content: flex-start;
       // background-color: #663399;
       align-content: center;
-      font-size: 22px;
+      font-size: 20px;
       max-width: 30rem;
       h2 {
         color: $font-color;
       }
-      article {
+      p {
         color: $font-color-text;
       }
     }
     &__imgContainer {
-      // background-color: #159bf3;
+      border: none;
     }
     &__img {
       border-radius: 50%;

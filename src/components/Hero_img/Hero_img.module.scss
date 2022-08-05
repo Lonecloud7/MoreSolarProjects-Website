@@ -8,11 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   // background-image: url(./hero2.jpg);
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position:center;
+  @include breakpoint-md(md) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
 
   &__backgroundImg {
     width: 100%;
@@ -20,25 +24,53 @@
     z-index: 0;
   }
   &__content {
-    padding: $padding1;
+    padding: 50px;
     display: inline;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    
   }
 
   &__text {
     color: white;
+    h1 {
+      margin: 0px 0px 5px 0px;
+      font-size: 40px;
+    }
+    p {
+      text-align: left;
+      max-width: 280px;
+      margin: 0;
+    }
+
+    @include breakpoint-md(md) {
+      h1 {
+        margin: 0px 0px 5px 0px;
+        font-size: 70px;
+      }
+      p {
+        text-align: left;
+        max-width: 350px;
+        font-size: 25px;
+        margin: 0;
+      }
+    }
   }
 
   button {
-    padding: 10px 10px;
+    padding: 20px 20px;
     outline: none;
     background-color: $font-color_dark;
-    border: 2px solid white;
+    border: none;
     color: white;
-    border-radius: 10px;
-    font-size: 15px;
+    border-radius: 2px;
+    font-size: 18px;
+    text-align: center;
+    @include breakpoint-md(md) {
+      text-align:left;
+    }
+
   }
 
   @include breakpoint-md(md) {

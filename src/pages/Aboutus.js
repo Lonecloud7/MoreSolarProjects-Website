@@ -57,6 +57,7 @@ const Aboutus = () => {
               fugit, minus praesentium maiores!
             </p>
           </div>
+
           <div className={styles.pageText__img}>
             <StaticImage
               src="../images/operation.jpg"
@@ -68,31 +69,44 @@ const Aboutus = () => {
               style={{ marginBottom: `var(--space-3)` }}
             />
           </div>
-          <div className={styles.pageText__list}>
+          <div className={styles.pageText__passage}>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              quasi autem nesciunt asperiores, est quidem reprehenderit id
+              delectus recusandae ut earum nemo totam laborum nobis officiis
+              doloremque quae distinctio ea?
+              <b>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas quidem blanditiis repellat. Quam eos quod dignissimos
+                adipisci dolor voluptates ab!
+              </b>
+            </p>
+          </div>
+          {/* <div className={styles.pageText__list}>
             <ul>
               <li className={styles.pageText__listHead}>List Head</li>
               <li>Lorem ipsum dolor sit.</li>
               <li>Lorem ipsum dolor sit.</li>
               <li>Lorem ipsum dolor sit.</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.pageText__flex}>
         <div className={styles.FlexCard__content}>
           <div className={styles.FlexCard__content__text}>
             <h2>Lorem ipsum dolor</h2>
-            <article>
+            <p>
               sit amet consectetur adipisicing elit. Voluptates esse incidunt
               officia vero consequuntur enim laboriosam harum fugit atque
               itaque?vero consequuntur enim
-            </article>
+            </p>
           </div>
-          <div className={styles.FlexCard__content__img}>
+          <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
               src="../images/heading.jpg"
               loading="eager"
-              width={500}
+              width={600}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""

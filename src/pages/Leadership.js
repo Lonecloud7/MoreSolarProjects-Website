@@ -17,14 +17,14 @@ const Leadership = () => {
       </div>
 
       <div className={styles.pageText__flex}>
-        <div className={styles.FlexCard__content}>
+        <div className={styles.FlexCard__content__flex}>
           <div className={styles.FlexCard__content__text}>
             <h2>Lorem ipsum dolor</h2>
-            <article>
+            <p>
               sit amet consectetur adipisicing elit. Voluptates esse incidunt
               officia vero consequuntur enim laboriosam harum fugit atque
               itaque?vero consequuntur enim
-            </article>
+            </p>
           </div>
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage

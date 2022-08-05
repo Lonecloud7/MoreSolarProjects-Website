@@ -19,7 +19,8 @@ const Hero_img = () => {
         />
         <div className={styles.Hero__content}>
           <div className={styles.Hero__text}>
-            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <h1>Lorem ipsum dolor </h1>
+            <h1>sit amet consectetur.</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
               ducimus sit aliquam eveniet odit.

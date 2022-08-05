@@ -18,16 +18,15 @@ const Operations = () => {
         <div className={styles.FlexCard__content}>
           <div className={styles.FlexCard__content__text}>
             <h2>Lorem ipsum dolor</h2>
-            <article>
-              sit amet consectetur adipisicing elit. Voluptates esse incidunt
-              officia vero consequuntur enim laboriosam harum fugit atque
-              itaque?vero consequuntur enim 
-            </article>
-            <article>
+            <p>
               sit amet consectetur adipisicing elit. Voluptates esse incidunt
               officia vero consequuntur enim laboriosam harum fugit atque
               itaque?vero consequuntur enim
-            </article>
+              <br />
+              sit amet consectetur adipisicing elit. Voluptates esse incidunt
+              officia vero consequuntur enim laboriosam harum fugit atque
+              itaque?vero consequuntur enim
+            </p>
           </div>
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
@@ -51,7 +50,7 @@ const Operations = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit,
               nobis repellendus. Laudantium, totam!Lorem Lorem ipsum dolor, sit
               amet consectetur adipisicing elit. Molestias temporibus doloremque
-              distinctio fuga 
+              distinctio fuga
             </p>
           </div>
         </div>
@@ -64,10 +63,10 @@ const Operations = () => {
             consectetur adipisicing elit. Dolores saepe perspiciatis qui, nihil
             quaerat iste exercitationem facilis at quibusdam maxime similique
             aliquam, fuga doloremque! Dolore natus minima ipsam fuga quis.
-            <i>
+            <b>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
               nemo veniam temporibus odio ipsam. Similique, aliquam numquam.
-            </i>
+            </b>
           </p>
         </div>
       </div>
