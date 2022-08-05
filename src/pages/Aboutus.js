@@ -34,21 +34,21 @@ const Aboutus = () => {
               nihil quaerat iste exercitationem facilis at quibusdam maxime
               similique aliquam, fuga doloremque! Dolore natus minima ipsam fuga
               quis.
-              <i>
+              <b>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
                 nemo veniam temporibus odio ipsam. Similique, aliquam numquam.
-              </i>
+              </b>
             </p>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               quasi autem nesciunt asperiores, est quidem reprehenderit id
               delectus recusandae ut earum nemo totam laborum nobis officiis
               doloremque quae distinctio ea?
-              <i>
+              <b>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptas quidem blanditiis repellat. Quam eos quod dignissimos
                 adipisci dolor voluptates ab!
-              </i>
+              </b>
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -92,7 +92,7 @@ const Aboutus = () => {
             <StaticImage
               src="../images/heading.jpg"
               loading="eager"
-              width={1920}
+              width={500}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""

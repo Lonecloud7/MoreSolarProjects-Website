@@ -29,7 +29,7 @@ const Operations = () => {
               itaque?vero consequuntur enim
             </article>
           </div>
-          <div className={styles.FlexCard__content__img}>
+          <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
               src="../images/heading.jpg"
               loading="eager"

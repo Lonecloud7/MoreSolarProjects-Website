@@ -26,15 +26,15 @@ const Leadership = () => {
               itaque?vero consequuntur enim
             </article>
           </div>
-          <div className={styles.FlexCard__content__img}>
+          <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
-              src="../images/heading.jpg"
+              src="../images/avatar5.jpg"
               loading="eager"
-              width={1920}
+              width={400}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""
-              style={{ marginBottom: `var(--space-3)` }}
+              className={styles.FlexCard__content__img}
             />
           </div>
         </div>
