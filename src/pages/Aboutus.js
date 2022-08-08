@@ -60,7 +60,7 @@ const Aboutus = () => {
 
           <div className={styles.pageText__img}>
             <StaticImage
-              src="../images/operation.jpg"
+              src="../images/shots/employee.jpg"
               loading="eager"
               width={650}
               quality={95}
@@ -104,7 +104,7 @@ const Aboutus = () => {
           </div>
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
-              src="../images/heading.jpg"
+              src="../images/shots/machine3.jpg"
               loading="eager"
               width={600}
               quality={95}

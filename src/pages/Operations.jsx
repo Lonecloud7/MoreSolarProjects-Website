@@ -9,7 +9,7 @@ const Operations = () => {
   const pageName = "Operations"
   return (
     <Layout>
-      <PageHeader title={pageName} />
+      <PageHeader title={pageName} img={pageName}/>
 
       <div className={styles.pageNav}>
         <Link to="/">Home</Link>/<Link to="/Operations">{pageName}</Link>
@@ -30,7 +30,7 @@ const Operations = () => {
           </div>
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
-              src="../images/heading.jpg"
+              src="../images/operation.jpg"
               loading="eager"
               width={1920}
               quality={95}
