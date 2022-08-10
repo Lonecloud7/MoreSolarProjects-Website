@@ -34,7 +34,7 @@ const PageCard = () => {
     }
   `)
 
-  const images = getImage(data.allFile.edges[0].node)
+  const images = getImage(data.allFile.edges[0].node)s
 
   const links = [
     {
