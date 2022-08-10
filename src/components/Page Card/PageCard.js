@@ -17,6 +17,7 @@ const PageCard = () => {
               "avatar5"
               "avatar6"
               "avatar7"
+              "gatsby-icon"
             ]
           }
         }
