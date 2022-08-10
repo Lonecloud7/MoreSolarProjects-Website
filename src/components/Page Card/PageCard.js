@@ -18,6 +18,10 @@ const PageCard = () => {
               "avatar6"
               "avatar7"
               "gatsby-icon"
+              "heading"
+              "hero"
+              "hero2"
+              "contactus"
             ]
           }
         }
@@ -34,7 +38,6 @@ const PageCard = () => {
     }
   `)
 
-  const images = getImage(data.allFile.edges[0].node)
 
   const links = [
     {
