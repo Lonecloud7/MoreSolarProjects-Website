@@ -1,6 +1,6 @@
 import React from "react"
 import * as styles from "./PageCard.module.scss"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
@@ -22,6 +22,7 @@ const PageCard = () => {
               "hero"
               "hero2"
               "contactus"
+              
             ]
           }
         }

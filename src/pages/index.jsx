@@ -37,7 +37,7 @@ const IndexPage = () => (
         </div>
         <div className={styles.FlexCard__content__img}>
           <StaticImage
-            src="../images/shots/machine2.jpg"
+            src="../images/shots/landscape5.jpg"
             loading="eager"
             width={1920}
             quality={95}
