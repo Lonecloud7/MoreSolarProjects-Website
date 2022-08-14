@@ -1,12 +1,12 @@
 import React from "react"
 import * as styles from "./AvatarCard.module.scss"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 const AvatarCard = () => {
   const data = useStaticQuery(graphql`
-    query{
+    query {
       allFile(
         filter: {
           name: {
@@ -28,7 +28,6 @@ const AvatarCard = () => {
             base
             childImageSharp {
               gatsbyImageData
-              
             }
           }
         }
@@ -72,7 +71,7 @@ const AvatarCard = () => {
   //GRAPH QL PATH FOR IMAGE DISPLAY
   // const image = getImage(data.allFile.edges[0].node)
   return (
-    <>
+    <div>
       <div className={styles.Grid}>
         {boardMembers.map((BoardData, index) => {
           const { img, name, title } = BoardData
@@ -81,8 +80,8 @@ const AvatarCard = () => {
 
           return (
             <div className={styles.Avatar} key={index}>
-              <div className={styles.Avatar__content}>
-                <Link to={"/Leadership"}>
+              <div>
+                <Link to={"/Leadership"} className={styles.Avatar__content}>
                   <div className={styles.Avatar__imgContainer}>
                     <GatsbyImage
                       image={image}
@@ -94,18 +93,17 @@ const AvatarCard = () => {
                   </div>
                 </Link>
 
-                <div className={styles.Avatar__name}>
-                  <p>{name}</p>
+                <div>
+                  <p className={styles.Avatar__name}>{name}</p>
+                  <p className={styles.Avatar__title}>{title}</p>
                 </div>
-                <div className={styles.Avatar__title}>
-                  <p>{title}</p>
-                </div>
+                <div></div>
               </div>
             </div>
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
