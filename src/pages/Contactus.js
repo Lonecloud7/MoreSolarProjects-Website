@@ -3,11 +3,13 @@ import Layout from "../components/layout"
 import PageHeader from "../components/PageHeader/PageHeader"
 import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
 
 const Contactus = () => {
   const pageName = "Contact us"
   return (
     <Layout>
+    <Seo title="Contact Us" />
       <PageHeader title={"Contact us"} />
 
       <div className={styles.pageNav}>

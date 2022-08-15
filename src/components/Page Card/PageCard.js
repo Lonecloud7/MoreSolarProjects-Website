@@ -92,7 +92,6 @@ const PageCard = () => {
                     alt=""
                     style={{ marginBottom: `var(--space-3)` }}
                     className={styles.img}
-                    imgClassName={styles.img}
                   />
                 </div>
 

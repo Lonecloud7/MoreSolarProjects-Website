@@ -5,6 +5,7 @@ import AvatarCard from "../components/AvatarCard/AvatarCard"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
 
 const Leadership = () => {
   const pageName = "Leadership"
@@ -12,6 +13,7 @@ const Leadership = () => {
   return (
     <>
       <Layout>
+      <Seo title="Leadership" />
         <PageHeader title={pageName} />
         <div className={styles.pageNav}>
           <Link to="/">Home</Link>/<Link to="/Leadership">{pageName}</Link>
@@ -35,7 +37,7 @@ const Leadership = () => {
                 quality={95}
                 formats={["auto", "webp", "avif"]}
                 alt=""
-                className={styles.FlexCard__content__img}
+                className={styles.FlexCard__content__imgRound}
               />
             </div>
           </div>

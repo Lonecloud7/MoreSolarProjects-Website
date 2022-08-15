@@ -4,11 +4,13 @@ import PageHeader from "../components/PageHeader/PageHeader"
 import * as styles from "../components/index.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
 
 const Aboutus = () => {
   const pageName = "About us"
   return (
     <Layout>
+    <Seo title="About Us" />
       <PageHeader title={"About us"} />
 
       <div className={styles.pageNav}>
