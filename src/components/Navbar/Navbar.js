@@ -60,11 +60,11 @@ const Navbar = () => {
           <div className={classes.Navbar__logo}>
             <Link to={`/`}>
               <StaticImage
-                src="./logo1.png"
+                src="./logo2.png"
                 alt=""
                 loading="eager"
                 placeholder="blurred"
-                width={40}
+                width={50}
                 quality={95}
               />
             </Link>

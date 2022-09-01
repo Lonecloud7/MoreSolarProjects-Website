@@ -24,10 +24,12 @@ const Footer = () => {
                 <li className={styles.foothead}>About us</li>
                 <li>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                    velit in magni id doloribus dolore voluptates sunt quod
-                    iusto error!velit in magni id doloribus dolore voluptates
-                    sunt quod iusto error!
+                    Oil & Gas is Africa’s largest, indigenous owned, oil
+                    and gas company, headquartered in Nigeria and led by a board
+                    and management team with significant regional and global
+                    experience in production, exploration, and value creation in
+                    the resources sector. Heirs Oil & Gas is the sole operator
+                    of OML 17, in Nigeria’s Niger Delta.
                   </p>
                 </li>
               </ul>
@@ -53,16 +55,15 @@ const Footer = () => {
               <ul>
                 <li className={styles.foothead}>Oil company</li>
                 <li>
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
+                  <p>Adebola House 228A</p>
                 </li>
                 <li>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque
+                  Awolowo Road, Ikoyi Lagos
                   </p>
                 </li>
                 <li>
-                  <p>Lorem ipsum dolor</p>
+                  <p>Nigeria</p>
                 </li>
               </ul>
             </div>

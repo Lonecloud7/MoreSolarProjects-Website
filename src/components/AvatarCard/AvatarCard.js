@@ -19,6 +19,16 @@ const AvatarCard = () => {
               "operation"
               "sustainability"
               "gatsby-icon"
+              "employee2"
+              "employee"
+              "employee3"
+              "landscape"
+              "landscape2"
+              "landscape3"
+              "landscape4"
+              "landscape5"
+              "machine"
+              "machine3"
             ]
           }
         }

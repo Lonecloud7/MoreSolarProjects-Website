@@ -67,6 +67,12 @@
     border-radius: 2px;
     font-size: 18px;
     text-align: center;
+
+    &:hover{
+      cursor: pointer;
+      background-color: aqua;
+      transition:  background 1s;
+    }
     @include breakpoint-md(md) {
       text-align:left;
     }
