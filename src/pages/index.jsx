@@ -66,7 +66,7 @@ const IndexPage = () => (
     </div>
 
     <div className={styles.newsletter}>
-      <div className={styles.newsletter__overlay}></div>
+      {/* <div className={styles.newsletter__overlay}></div> */}
       <form onSubmit={e => e.preventDefault()} className={styles.newsinput}>
         <div>
           <h3>SUBSRCRIBE OUR NEWSLETTER</h3>
