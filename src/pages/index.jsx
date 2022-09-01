@@ -80,7 +80,7 @@ const IndexPage = () => (
         </div>
       </form>
     </div>
-  </Layout>s
+  </Layout>
 )
 
 export default IndexPage
