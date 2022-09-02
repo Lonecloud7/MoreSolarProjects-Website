@@ -29,16 +29,18 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    // inset is a short hand for top, right, bottom, left
-    inset: 0 100% 0 0;
-    // top: 0;
-    // right: 100%;
-    // bottom: 0;
+
+    // inset is a short hand for top right bottom left
+    left: 30%;
+    top: 0;
+
+    bottom: 0;
+
     margin: auto;
     // padding: 24px var(--size-gutter);
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items:start;
     justify-content: center;
     background: rgba($font-color_light, 0.9);
     backdrop-filter: blur(2px);
