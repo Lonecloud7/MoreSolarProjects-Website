@@ -70,7 +70,7 @@
 
     &:hover{
       cursor: pointer;
-      background-color: aqua;
+      background-color: #34487e;
       transition:  background 1s;
     }
     @include breakpoint-md(md) {
