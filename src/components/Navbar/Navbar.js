@@ -7,7 +7,7 @@ import { FaTimes } from "react-icons/fa"
 import * as classes from "./Navbar.module.scss"
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
@@ -27,12 +27,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (size.width > 768 && menuOpen) {
-      setMenuOpen(true)
+      setMenuOpen(false)
     }
   }, [size.width, menuOpen])
 
   const onChange = () => {
-    setMenuOpen(prev => !prev)
+    setMenuOpen(prev => !prev)s
   }
   const navLinks = [
     {
@@ -95,7 +95,7 @@ const Navbar = () => {
               onChange()
             }}
           >
-            {menuOpen ? <FaBars /> : <FaTimes />}
+            {menuOpen ? <FaTimes /> : <FaBars />}
           </div>
         </div>
       </header>
