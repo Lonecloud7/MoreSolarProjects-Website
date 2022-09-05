@@ -32,7 +32,7 @@ const Navbar = () => {
   }, [size.width, menuOpen])
 
   const onChange = () => {
-    setMenuOpen(prev => !prev)
+    setMenuOpen(prev => !prev)s
   }
   const navLinks = [
     {
