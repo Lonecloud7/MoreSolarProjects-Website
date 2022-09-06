@@ -10,7 +10,7 @@ const Aboutus = () => {
   const pageName = "About us"
   return (
     <Layout>
-    <Seo title="About Us" />
+    <Seo title={pageName} />
       <PageHeader title={"About us"} />
 
       <div className={styles.pageNav}>

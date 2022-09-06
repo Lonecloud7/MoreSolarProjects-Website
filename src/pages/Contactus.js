@@ -9,7 +9,7 @@ const Contactus = () => {
   const pageName = "Contact us"
   return (
     <Layout>
-      <Seo title="Contact Us" />
+      <Seo title={pageName} />
       <PageHeader title={"Contact us"} />
 
       <div className={styles.pageNav}>

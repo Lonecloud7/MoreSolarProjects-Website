@@ -28,7 +28,7 @@ const Hero_img = () => {
           </div>
           <div className={styles.Hero__button}>
             <Link to={"/Operations"}>
-              <button>Hero button</button>
+              <button>Read More</button>
             </Link>
           </div>
         </div>

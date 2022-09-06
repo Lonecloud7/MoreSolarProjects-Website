@@ -10,7 +10,7 @@ const Operations = () => {
   const pageName = "Operations"
   return (
     <Layout>
-    <Seo title="Operations" />
+    <Seo title={pageName} />
       <PageHeader title={pageName} img={pageName}/>
 
       <div className={styles.pageNav}>

@@ -13,7 +13,7 @@ const Leadership = () => {
   return (
     <>
       <Layout>
-      <Seo title="Leadership" />
+      <Seo title={pageName} />
         <PageHeader title={pageName} />
         <div className={styles.pageNav}>
           <Link to="/">Home</Link>/<Link to="/Leadership">{pageName}</Link>
