@@ -31,7 +31,7 @@
     height: 100vh;
 
     // inset is a short hand for top, right, bottom, left
-    left: 50%;
+    left: 45%;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -45,7 +45,7 @@
     transform: translate(100%);
     transition: 0.5s ease transform;
     // link padding
-    padding: 20px 20px 200px 20px;
+    padding: 20px 0px 200px 0px;
     font-size: 25px;
 
     @include breakpoint-md(md) {
