@@ -44,8 +44,12 @@
 }
 
 .listItem {
-  margin: 0;
   width: auto;
+  margin-bottom: 10px;
+
+  @include breakpoint-md(md) {
+    margin: 0;
+  }
 }
 
 .title {
