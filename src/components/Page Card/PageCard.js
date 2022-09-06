@@ -43,7 +43,7 @@ const PageCard = () => {
   const links = [
     {
       text: "Who We Are",
-      url: "/Contactus",
+      url: "/Aboutus",
       imgUrl: data.allFile.edges[4].node,
       description:
         "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
