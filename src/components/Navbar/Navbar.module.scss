@@ -16,6 +16,10 @@
     border-radius: 2px;
     height: 2px;
     width: 100%;
+
+    @include breakpoint-md(md){
+      display: none;
+    }
   }
 
   &__content {
