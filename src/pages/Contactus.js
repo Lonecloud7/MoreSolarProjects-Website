@@ -51,7 +51,7 @@ const Contactus = () => {
             </div>
 
             <h2>Media</h2>
-            <div className={styles.pageText__passage}>s
+            <div className={styles.pageText__passage}>
               <p>
                 For media enquiries, please send an email fakeemail@johndoe.com
                 and a member of our team will contact you.
