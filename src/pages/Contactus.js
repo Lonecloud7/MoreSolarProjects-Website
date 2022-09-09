@@ -64,7 +64,7 @@ const Contactus = () => {
                 info@first-epdc.com and a member of our team will contact you.
               </p>
             </div>
-          </div>s
+          </div>
         </div>
       </div>
     </Layout>
