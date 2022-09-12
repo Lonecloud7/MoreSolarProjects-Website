@@ -20,7 +20,7 @@ const Contactus = () => {
         <div className={styles.pageFlex}>
           <div className={styles.pageText__header}>
             <h2>Company Office Address</h2>
-            <div className={styles.pageText__passage}>
+            <div className={styles.pageText__passage}>s
               <p>
                 Adebola House 228A <br /> Awolowo Road <br /> Ikoyi Lagos <br />
                 Nigeria
