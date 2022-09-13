@@ -6,9 +6,11 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
 import Hero_img from "../components/Hero_img/Hero_img"
 import PageCard from "../components/Page Card/PageCard"
+import { useState } from "react"
 
 const IndexPage = () => {
 
+  const [Word, SetWord] = useState("")
   const pageName = "Home"
   return (
     <Layout>
@@ -72,11 +74,11 @@ const IndexPage = () => {
         {/* <div className={styles.newsletter__overlay}></div> */}
         <form onSubmit={e => e.preventDefault()} className={styles.newsinput}>
           <div>
-            <h3>SUBSRCRIBE OUR NEWSLETTER</h3>
+            <h3>{Word}</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam!
             </p>
-            <input type="text" placeholder="Your Email here" />
+            <input type="text" placeholder="Your Email here" value={Word} onChange={e => {SetWord(e.target.value)}}/>
             <br />
             <br />
             <input type="submit" className={styles.newsbtn} />
