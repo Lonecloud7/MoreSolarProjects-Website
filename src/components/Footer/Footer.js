@@ -24,12 +24,12 @@ const Footer = () => {
                 <li className={styles.foothead}>About us</li>
                 <li>
                   <p>
-                    Oil & Gas is Africa’s largest, indigenous owned, oil
-                    and gas company, headquartered in Nigeria and led by a board
-                    and management team with significant regional and global
-                    experience in production, exploration, and value creation in
-                    the resources sector. Heirs Oil & Gas is the sole operator
-                    of OML 17, in Nigeria’s Niger Delta.
+                    More Solar Projects Ltd, MSPL was founded in 2021 to provide
+                    bespoke Occupational Health, Safety, Industrial Security,
+                    Environmental, Quality Assurance and Quality Control and
+                    Sustainable Community Development, SCD consultancy services
+                    to the oil and gas industry, as well as explore ventures
+                    within the UN SDG #7 value chain quis.
                   </p>
                 </li>
               </ul>
@@ -53,14 +53,12 @@ const Footer = () => {
             </div>
             <div className={styles.address}>
               <ul>
-                <li className={styles.foothead}>Oil company</li>
+                <li className={styles.foothead}>More Solar Projects Ltd</li>
                 <li>
                   <p>Adebola House 228A</p>
                 </li>
                 <li>
-                  <p>
-                  Awolowo Road, Ikoyi Lagos
-                  </p>
+                  <p>Awolowo Road, Ikoyi Lagos</p>
                 </li>
                 <li>
                   <p>Nigeria</p>
