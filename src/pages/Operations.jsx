@@ -47,7 +47,7 @@ const Operations = () => {
       <div className={styles.pageText}>
         <div className={styles.pageText__content}>
           <div className={styles.pageText__header}>
-            <h2>Meet Our Team</h2>
+            <h2>OUR PROJECTS</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit,
               nobis repellendus. Laudantium, totam!Lorem Lorem ipsum dolor, sit
