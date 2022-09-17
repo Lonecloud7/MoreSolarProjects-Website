@@ -18,7 +18,7 @@ const IndexPage = () => {
 
       <PageCard />
       <div
-        className={styles.textCenter}
+        className={styles.textCenter}ss
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
