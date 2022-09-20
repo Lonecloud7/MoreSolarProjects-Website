@@ -7,31 +7,14 @@ import { Link } from "gatsby"
 const PageCard = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: {
-          name: {
-            nin: [
-              "avatar2"
-              "avatar3"
-              "avatar4"
-              "avatar5"
-              "avatar6"
-              "avatar7"
-              "gatsby-icon"
-              "heading"
-              "hero"
-              "hero2"
-              "contactus"
-              
-            ]
-          }
-        }
-      ) {
+      allFile(filter: { relativeDirectory: { eq: "home-cards" } }) {
         edges {
           node {
             base
+            relativePath
+            id
             childImageSharp {
-              gatsbyImageData(width:400)
+              gatsbyImageData
             }
           }
         }
@@ -39,19 +22,18 @@ const PageCard = () => {
     }
   `)
 
-
   const links = [
     {
-      text: "Who We Are",
+      text: data.allFile.edges[3].node.base,
       url: "/Aboutus",
-      imgUrl: data.allFile.edges[4].node,
+      imgUrl: data.allFile.edges[3].node,
       description:
         "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     },
     {
-      text: "Operations",
-      url: "/Operations",
-      imgUrl: data.allFile.edges[2].node,
+      text: data.allFile.edges[1].node.base,
+      url: "/Leadership",
+      imgUrl: data.allFile.edges[1].node,
       description:
         "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
     },
@@ -64,9 +46,9 @@ const PageCard = () => {
     //     "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
     // },
     {
-      text: "Leadership",
-      url: "/Leadership",
-      imgUrl: data.allFile.edges[3].node,
+      text: data.allFile.edges[2].node.base,
+      url: "/Operations",
+      imgUrl: data.allFile.edges[2].node,
       description:
         "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
     },
