@@ -7,35 +7,12 @@ import { Link } from "gatsby"
 const AvatarCard = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: {
-          name: {
-            nin: [
-              "contactus"
-              "heading"
-              "hero"
-              "hero2"
-              "leadership"
-              "operation"
-              "sustainability"
-              "gatsby-icon"
-              "employee2"
-              "employee"
-              "employee3"
-              "landscape"
-              "landscape2"
-              "landscape3"
-              "landscape4"
-              "landscape5"
-              "machine"
-              "machine3"
-            ]
-          }
-        }
-      ) {
+      allFile(filter: {relativeDirectory: {eq: "leadership"}}) {
         edges {
           node {
             base
+            relativePath
+            id
             childImageSharp {
               gatsbyImageData
             }
@@ -46,9 +23,9 @@ const AvatarCard = () => {
   `)
 
   const boardMembers = [
-    {
+    { id:data.allFile.edges[0].node,
       img: data.allFile.edges[0].node,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[0].node.base,
       title: "CEO",
     },
     {
