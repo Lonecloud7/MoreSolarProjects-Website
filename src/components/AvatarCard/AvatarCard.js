@@ -7,14 +7,18 @@ import { Link } from "gatsby"
 const AvatarCard = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativeDirectory: {eq: "leadership"}}) {
+      allFile(filter: { relativeDirectory: { eq: "leadership" } }) {
         edges {
           node {
             base
             relativePath
             id
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 70
+                blurredOptions: { width: 100 }
+              )
             }
           }
         }
@@ -23,33 +27,33 @@ const AvatarCard = () => {
   `)
 
   const boardMembers = [
-    { id:data.allFile.edges[0].node,
-      img: data.allFile.edges[0].node,
+    {
+      img: data.allFile.edges[0].node.childImageSharp.gatsbyImageData,
       name: data.allFile.edges[0].node.base,
       title: "CEO",
     },
     {
-      img: data.allFile.edges[1].node,
+      img: data.allFile.edges[1].node.childImageSharp.gatsbyImageData,
       name: "Lorem ipsum.",
       title: "Accountant",
     },
     {
-      img: data.allFile.edges[2].node,
+      img: data.allFile.edges[2].node.childImageSharp.gatsbyImageData,
       name: "Lorem ipsum.",
       title: "General Counsel",
     },
     {
-      img: data.allFile.edges[3].node,
+      img: data.allFile.edges[3].node.childImageSharp.gatsbyImageData,
       name: "Lorem ipsum.",
       title: "Non-Executive Director",
     },
     {
-      img: data.allFile.edges[4].node,
+      img: data.allFile.edges[4].node.childImageSharp.gatsbyImageData,
       name: "Lorem ipsum.",
       title: "Executive Director, Commercial/CFO",
     },
     {
-      img: data.allFile.edges[5].node,
+      img: data.allFile.edges[5].node.childImageSharp.gatsbyImageData,
       name: "Lorem ipsum.",
       title: "Chairman",
     },
@@ -57,6 +61,7 @@ const AvatarCard = () => {
 
   //GRAPH QL PATH FOR IMAGE DISPLAY
   // const image = getImage(data.allFile.edges[0].node)
+
   return (
     <div>
       <div className={styles.Grid}>
