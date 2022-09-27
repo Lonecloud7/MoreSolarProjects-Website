@@ -3,11 +3,11 @@ import * as slideStyles from "./Slideshow.module.scss"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Carousel from "react-bootstrap/Carousel"
-import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 
-const Slideshow = () => {
+const SlideshowMobile = () => {
+  
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "slideshow" } }) {
@@ -21,9 +21,9 @@ const Slideshow = () => {
                 placeholder: BLURRED
                 quality: 70
                 blurredOptions: { width: 100 }
-                width: 1920
-                height: 870
-                transformOptions: { fit: FILL, cropFocus: CENTER}
+                width: 768
+                height: 1350
+                transformOptions: {cropFocus: CENTER, fit: COVER}
               )
             }
           }
@@ -35,12 +35,19 @@ const Slideshow = () => {
   return (
     <div className={slideStyles.Slideshow}>
       <div className={slideStyles.Slideshow__img}>
-        <Carousel fade="true">
+        <Carousel touch="true">
           {data.allFile.edges.map(({ node }) => {
             const image = getImage(node.childImageSharp.gatsbyImageData)
             return (
               <Carousel.Item>
                 <GatsbyImage image={image} alt={node.base} />
+
+                {/* <Carousel.Caption>
+                  <h3>First slide label</h3>
+                  <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                </Carousel.Caption> */}
               </Carousel.Item>
             )
           })}
@@ -66,4 +73,4 @@ const Slideshow = () => {
   )
 }
 
-export default Slideshow
+export default SlideshowMobile

@@ -32,7 +32,7 @@ const Operations = () => {
           </div>
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
-              src="../images/operation.jpg"
+              src="../images/home-cards/operations.jpg"
               loading="eager"
               width={1920}
               quality={95}

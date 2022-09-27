@@ -31,7 +31,7 @@ const Leadership = () => {
             </div>
             <div className={styles.FlexCard__content__imgContainer}>
               <StaticImage
-                src="../images/avatar5.jpg"
+                src="../images/leadership/avatar5.jpg"
                 loading="eager"
                 width={400}
                 quality={95}

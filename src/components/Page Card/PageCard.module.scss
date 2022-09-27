@@ -57,6 +57,9 @@
   font-weight: bold;
   text-decoration: none;
   width: auto;
+  &:hover {
+    color: $font-color;
+  }
 }
 
 .text {

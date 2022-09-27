@@ -54,8 +54,8 @@ $header-hth:350px;
 
 @mixin breakpoint-sd($point){
     @if $point == sd {
-        //640px
-        @media (min-width:40em){
+        //389px
+        @media (min-width:389px){
             @content;
         }
     }

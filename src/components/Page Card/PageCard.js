@@ -24,14 +24,14 @@ const PageCard = () => {
 
   const links = [
     {
-      text: data.allFile.edges[3].node.base,
+      text: data.allFile.edges[3].node.base.split(".")[0],
       url: "/Aboutus",
       imgUrl: data.allFile.edges[3].node,
       description:
         "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     },
     {
-      text: data.allFile.edges[1].node.base,
+      text: data.allFile.edges[1].node.base.split(".")[0],
       url: "/Leadership",
       imgUrl: data.allFile.edges[1].node,
       description:
@@ -46,7 +46,7 @@ const PageCard = () => {
     //     "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
     // },
     {
-      text: data.allFile.edges[2].node.base,
+      text: data.allFile.edges[2].node.base.split(".")[0],
       url: "/Operations",
       imgUrl: data.allFile.edges[2].node,
       description:

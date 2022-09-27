@@ -79,12 +79,12 @@ const Navbar = () => {
               {navLinks.map(links => {
                 const { title, url } = links
                 return (
-                  <div key={url}>
-                    <li>
+                  <>
+                    <li key={url}>
                       <Link to={url}>{title}</Link>
                     </li>
                     <div className={classes.border}></div>
-                  </div>
+                  </>
                 )
               })}
             </ul>

@@ -3,17 +3,47 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
-import Hero_img from "../components/Hero_img/Hero_img"
+// import Hero_img from "../components/Hero_img/Hero_img"
 import PageCard from "../components/Page Card/PageCard"
+import Slideshow from "../components/Slideshow/Slideshow"
+import SlideshowMobile from "../components/Slideshow/SlideshowMobile"
+import { useState, useEffect } from "react"
 
 const IndexPage = () => {
+  const [value, setValue] = useState(true)
 
+  const [size, setSize] = useState({
+    width: undefined,
+    height: undefined,
+  })
+
+  useEffect(() => {
+    const handleSizeChange = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+    window.addEventListener("resize", handleSizeChange)
+
+    return () => window.removeEventListener("resize", handleSizeChange)
+  }, [])
+
+  useEffect(() => {
+
+    if (size.width < 768) {
+      setValue(false)
+    }
+    if (size.width > 768) {
+      setValue(true)
+    }
+  }, [size.width])
   
   const pageName = "Home"
   return (
     <Layout>
       <Seo title={pageName} />
-      <Hero_img />
+      {value ? <Slideshow /> : <SlideshowMobile />}
 
       <PageCard />
       <div

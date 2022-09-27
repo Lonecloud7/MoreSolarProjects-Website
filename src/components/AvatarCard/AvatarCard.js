@@ -29,32 +29,32 @@ const AvatarCard = () => {
   const boardMembers = [
     {
       img: data.allFile.edges[0].node.childImageSharp.gatsbyImageData,
-      name: data.allFile.edges[0].node.base,
+      name: data.allFile.edges[0].node.base.split(".")[0],
       title: "CEO",
     },
     {
       img: data.allFile.edges[1].node.childImageSharp.gatsbyImageData,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[1].node.base.split(".")[0],
       title: "Accountant",
     },
     {
       img: data.allFile.edges[2].node.childImageSharp.gatsbyImageData,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[2].node.base.split(".")[0],
       title: "General Counsel",
     },
     {
       img: data.allFile.edges[3].node.childImageSharp.gatsbyImageData,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[3].node.base.split(".")[0],
       title: "Non-Executive Director",
     },
     {
       img: data.allFile.edges[4].node.childImageSharp.gatsbyImageData,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[4].node.base.split(".")[0],
       title: "Executive Director, Commercial/CFO",
     },
     {
       img: data.allFile.edges[5].node.childImageSharp.gatsbyImageData,
-      name: "Lorem ipsum.",
+      name: data.allFile.edges[5].node.base.split(".")[0],
       title: "Chairman",
     },
   ]

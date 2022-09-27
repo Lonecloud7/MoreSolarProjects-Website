@@ -1,0 +1,86 @@
+@import "/src/Styles/Styles";
+
+.Slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint-sd(sd) {
+    height: 80vh;
+  }
+  @include breakpoint-md(md) {
+    height: 30vh;
+  }
+  @include breakpoint-ld(ld) {
+    height: 90vh;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  &__content {
+    padding: 70px;
+    z-index: 10;
+
+    @include breakpoint-md(md) {
+      padding: 50px;
+      display: inline;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    color: white;
+    h1 {
+      margin: 0px 0px 5px 0px;
+      font-size: 30px;
+    }
+    p {
+      text-align: left;
+      max-width: 280px;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    @include breakpoint-md(md) {
+      h1 {
+        margin: 0px 0px 5px 0px;
+        font-size: 65px;
+      }
+      p {
+        text-align: left;
+        max-width: 350px;
+        font-size: 25px;
+        margin: 10px 0px;
+      }
+    }
+  }
+
+  button {
+    padding: 20px 20px;
+    outline: none;
+    background-color: $font-color_dark;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #34487e;
+      transition: background 1s;
+    }
+    @include breakpoint-md(md) {
+      text-align: left;
+    }
+  }
+}
