@@ -3,14 +3,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
-// import Hero_img from "../components/Hero_img/Hero_img"
+import Hero_img from "../components/Hero_img/Hero_img"
 import PageCard from "../components/Page Card/PageCard"
 import Slideshow from "../components/Slideshow/Slideshow"
 import SlideshowMobile from "../components/Slideshow/SlideshowMobile"
 import { useState, useEffect } from "react"
 
 const IndexPage = () => {
-  const [value, setValue] = useState(true)
+  const [value, setValue] = useState(false)
 
   const [size, setSize] = useState({
     width: undefined,
@@ -31,10 +31,10 @@ const IndexPage = () => {
 
   useEffect(() => {
 
-    if (size.width < 768) {
+    if (size.width < 768 && value) {
       setValue(false)
     }
-    if (size.width > 768) {
+    if (size.width > 768 && value == false) {
       setValue(true)
     }
   }, [size.width])
@@ -43,8 +43,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title={pageName} />
-      {value ? <Slideshow /> : <SlideshowMobile />}
+      {/* {value ? <Slideshow /> : <SlideshowMobile />} */}
 
+      <Hero_img />
       <PageCard />
       <div
         className={styles.textCenter}
