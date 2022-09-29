@@ -3,10 +3,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
-import Hero_img from "../components/Hero_img/Hero_img"
+// import Hero_img from "../components/Hero_img/Hero_img"
 import PageCard from "../components/Page Card/PageCard"
-import Slideshow from "../components/Slideshow/Slideshow"
-import SlideshowMobile from "../components/Slideshow/SlideshowMobile"
+import Slideshow2 from "../components/Slideshow/Slideshow"
 import { useState, useEffect } from "react"
 
 const IndexPage = () => {
@@ -30,7 +29,6 @@ const IndexPage = () => {
   }, [])
 
   useEffect(() => {
-
     if (size.width < 768 && value) {
       setValue(false)
     }
@@ -38,14 +36,13 @@ const IndexPage = () => {
       setValue(true)
     }
   }, [size.width])
-  
+
   const pageName = "Home"
   return (
     <Layout>
       <Seo title={pageName} />
-      {/* {value ? <Slideshow /> : <SlideshowMobile />} */}
+      <Slideshow2 />
 
-      <Hero_img />
       <PageCard />
       <div
         className={styles.textCenter}
@@ -107,7 +104,7 @@ const IndexPage = () => {
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam!
             </p>
-            <input type="text" placeholder="Your Email here"/>
+            <input type="text" placeholder="Your Email here" />
             <br />
             <br />
             <input type="submit" className={styles.newsbtn} />
