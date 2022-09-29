@@ -7,13 +7,26 @@ import { StaticImage } from "gatsby-plugin-image"
 const Slideshow = () => {
   return (
     <div className={slideStyles2.Slideshow}>
-    <div className={slideStyles2.Slideshow__overlay}></div>
+      <div className={slideStyles2.Slideshow__overlay}></div>
       <div className={slideStyles2.Slideshow__backgroundImg}>
         <Carousel fade="true" touch="true" controls={false}>
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape.jpg"
+                src="./landscape.jpg"
+                loading="eager"
+                grayscale={true}
+                placeholder="blurred"
+                layout="fullWidth"
+                alt=""
+                className={slideStyles2.Slideshow__Img}
+              />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={slideStyles2.Slideshow__ImgContainer}>
+              <StaticImage
+                src="./landscape1.jpg"
                 loading="eager"
                 grayscale={true}
                 placeholder="blurred"
@@ -27,7 +40,7 @@ const Slideshow = () => {
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape1.jpg"
+                src="./landscape2.jpg"
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
@@ -40,7 +53,7 @@ const Slideshow = () => {
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape2.jpg"
+                src="./landscape3.jpg"
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
@@ -53,7 +66,7 @@ const Slideshow = () => {
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape3.jpg"
+                src="./landscape4.jpg"
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
@@ -66,7 +79,7 @@ const Slideshow = () => {
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape4.jpg"
+                src="./landscape5.jpg"
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
@@ -79,7 +92,7 @@ const Slideshow = () => {
           <Carousel.Item>
             <div className={slideStyles2.Slideshow__ImgContainer}>
               <StaticImage
-                src="/Users/zitaf/Gatsby Apps/oil-company-site/src/images/slideshow/landscape5.jpg"
+                src="./landscape6.jpg"
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
@@ -100,7 +113,6 @@ const Slideshow = () => {
           </p>
         </div>
 
-        
         <div className={slideStyles2.Slideshow__button}>
           <Link to={"/Operations"}>
             <button>Read More</button>

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `More solar Projects Ltd`,
+    description: `More Solar Projects Ltd, MSPL was founded in 2021 to provide bespoke Occupational Health, Safety, Industrial Security, Environmental, Quality Assurance and Quality Control and Sustainable Community Development, SCD consultancy services to the oil and gas industry, as well as explore ventures within the UN SDG #7 value chain quis.`,
+    author: `More Solar Projects Ltd`,
+    siteUrl: `https://moresolarprojects.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
