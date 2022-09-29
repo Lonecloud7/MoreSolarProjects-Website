@@ -15,7 +15,7 @@ const Slideshow = () => {
               <StaticImage
                 src="./landscape.jpg"
                 loading="eager"
-                grayscale={true}
+                quality={60}
                 placeholder="blurred"
                 layout="fullWidth"
                 alt=""
@@ -28,7 +28,7 @@ const Slideshow = () => {
               <StaticImage
                 src="./landscape1.jpg"
                 loading="eager"
-                grayscale={true}
+                quality={60}
                 placeholder="blurred"
                 layout="fullWidth"
                 alt=""
@@ -42,6 +42,7 @@ const Slideshow = () => {
               <StaticImage
                 src="./landscape2.jpg"
                 loading="eager"
+                quality={60}
                 placeholder="blurred"
                 layout="fullWidth"
                 alt=""
@@ -56,6 +57,7 @@ const Slideshow = () => {
                 src="./landscape3.jpg"
                 loading="eager"
                 placeholder="blurred"
+                quality={60}
                 layout="fullWidth"
                 alt=""
                 className={slideStyles2.Slideshow__Img}
@@ -69,6 +71,7 @@ const Slideshow = () => {
                 src="./landscape4.jpg"
                 loading="eager"
                 placeholder="blurred"
+                quality={60}
                 layout="fullWidth"
                 alt=""
                 className={slideStyles2.Slideshow__Img}
@@ -83,6 +86,7 @@ const Slideshow = () => {
                 loading="eager"
                 placeholder="blurred"
                 layout="fullWidth"
+                quality={60}
                 alt=""
                 className={slideStyles2.Slideshow__Img}
               />
@@ -95,6 +99,7 @@ const Slideshow = () => {
                 src="./landscape6.jpg"
                 loading="eager"
                 placeholder="blurred"
+                quality={60}
                 layout="fullWidth"
                 alt=""
                 className={slideStyles2.Slideshow__Img}
