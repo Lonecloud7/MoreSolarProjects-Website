@@ -3,12 +3,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
-// import Hero_img from "../components/Hero_img/Hero_img"
 import PageCard from "../components/Page Card/PageCard"
 import Slideshow2 from "../components/Slideshow/Slideshow"
 import { useState, useEffect } from "react"
 
 const IndexPage = () => {
+
+  //EFFECT ATTEMPT TO SWITCH BTW 2 HERO COMPONENTS
+  
   const [value, setValue] = useState(false)
 
   const [size, setSize] = useState({
