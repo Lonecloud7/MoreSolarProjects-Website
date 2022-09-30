@@ -24,7 +24,7 @@
 
 .FlexCard {
   width: 100%;
-  // padding: 20px 0px;
+  padding: 10px;
   background-color: $font-color_light;
   color: white;
   height: auto;
@@ -51,6 +51,7 @@
       gap: 10px;  
       grid-template-columns: repeat(2, 1fr);
       margin: 0;
+      padding: 0px;
     }
 
     &__flex {
@@ -95,13 +96,17 @@
     }
     &__imgContainer {
       border: none;
+      @include breakpoint-md(md) {
+        width: 100%;
+        height: 100%;
+      }
     }
     &__img {
       height: 250px;
       width: auto;
       @include breakpoint-md(md) {
-        height: 350px;
-        width: auto;
+        width: 100%;
+        height: 100%;
       }
     }
     &__imgRound {
