@@ -7,7 +7,7 @@ const PageHeader = ({ title, img}) => {
       <div className={styles.Header} >
         <div className={styles.Header__overlay}></div>
         <div className={styles.Header__content} id={"operations"}>
-          <div className={styles.Header__text}>
+          <div className={styles.Header__content__text}>
             <h1>{title}</h1>
           </div>
         </div>
