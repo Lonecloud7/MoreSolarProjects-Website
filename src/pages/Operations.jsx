@@ -10,14 +10,14 @@ const Operations = () => {
   const pageName = "Operations"
   return (
     <Layout>
-    <Seo title={pageName} />
-      <PageHeader title={pageName} img={pageName}/>
+      <Seo title={pageName} />
+      <PageHeader title={pageName} img={pageName} />
 
       <div className={styles.pageNav}>
         <Link to="/">Home</Link>/<Link to="/Operations">{pageName}</Link>
       </div>
       <div className={styles.pageText__flex}>
-        <div className={styles.FlexCard__content}>
+        <div className={styles.FlexCard__content__flex}>
           <div className={styles.FlexCard__content__text}>
             <h2>Lorem ipsum dolor</h2>
             <p>
@@ -34,7 +34,8 @@ const Operations = () => {
             <StaticImage
               src="../images/home-cards/Operations.jpg"
               loading="eager"
-              width={1920}
+              width={600}
+              height={400}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""

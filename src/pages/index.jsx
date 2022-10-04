@@ -8,36 +8,35 @@ import Slideshow2 from "../components/Slideshow/Slideshow"
 import { useState, useEffect } from "react"
 
 const IndexPage = () => {
-
   //EFFECT ATTEMPT TO SWITCH BTW 2 HERO COMPONENTS
-  
-  const [value, setValue] = useState(false)
 
-  const [size, setSize] = useState({
-    width: undefined,
-    height: undefined,
-  })
+  // const [value, setValue] = useState(false)
 
-  useEffect(() => {
-    const handleSizeChange = () => {
-      setSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      })
-    }
-    window.addEventListener("resize", handleSizeChange)
+  // const [size, setSize] = useState({
+  //   width: undefined,
+  //   height: undefined,
+  // })
 
-    return () => window.removeEventListener("resize", handleSizeChange)
-  }, [])
+  // useEffect(() => {
+  //   const handleSizeChange = () => {
+  //     setSize({
+  //       width: window.innerWidth,
+  //       height: window.innerHeight,
+  //     })
+  //   }
+  //   window.addEventListener("resize", handleSizeChange)
 
-  useEffect(() => {
-    if (size.width < 768 && value) {
-      setValue(false)
-    }
-    if (size.width > 768 && value == false) {
-      setValue(true)
-    }
-  }, [size.width])
+  //   return () => window.removeEventListener("resize", handleSizeChange)
+  // }, [])
+
+  // useEffect(() => {
+  //   if (size.width < 768 && value) {
+  //     setValue(false)
+  //   }
+  //   if (size.width > 768 && value == false) {
+  //     setValue(true)
+  //   }
+  // }, [size.width])
 
   const pageName = "Home"
   return (
@@ -56,14 +55,17 @@ const IndexPage = () => {
       ></div>
       <div className={styles.FlexCard}>
         <div className={styles.FlexCard__content}>
-          <div className={styles.FlexCard__content__text}>
-            <h2>Lorem ipsum dolor</h2>
-            <article>
-              sit amet consectetur adipisicing elit. Voluptates esse incidunt
-              officia vero consequuntur enim laboriosam harum fugit atque
-              itaque?vero consequuntur enim
-            </article>
+          <div className={styles.FlexCard__textFlex}>
+            <div className={styles.FlexCard__content__text}>
+              <h2>Lorem ipsum dolor</h2>
+              <article>
+                sit amet consectetur adipisicing elit. Voluptates esse incidunt
+                officia vero consequuntur enim laboriosam harum fugit atque
+                itaque?vero consequuntur enim
+              </article>
+            </div>
           </div>
+
           <div className={styles.FlexCard__content__imgContainer}>
             <StaticImage
               src="../images/shots/landscape5.jpg"
@@ -87,13 +89,15 @@ const IndexPage = () => {
               className={styles.FlexCard__content__img}
             />
           </div>
-          <div className={styles.FlexCard__content__text}>
-            <h2>Lorem ipsum dolor</h2>
-            <article>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates esse incidunt officia vero consequuntur enim laboriosam
-              harum fugit atque itaque?vero consequuntur enim
-            </article>
+          <div className={styles.FlexCard__textFlex}>
+            <div className={styles.FlexCard__content__text}>
+              <h2>Lorem ipsum dolor</h2>
+              <article>
+                sit amet consectetur adipisicing elit. Voluptates esse incidunt
+                officia vero consequuntur enim laboriosam harum fugit atque
+                itaque?vero consequuntur enim
+              </article>
+            </div>
           </div>
         </div>
       </div>

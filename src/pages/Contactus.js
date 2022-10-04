@@ -22,48 +22,48 @@ const Contactus = () => {
           <div className={styles.pageText__header}>
             <h2>Company Office Address</h2>
             <div className={styles.pageText__passage}>
-              <p>
+              <span>
                 Adebola House 228A <br /> Awolowo Road <br /> Ikoyi Lagos <br />
                 Nigeria
-              </p>
+              </span>
             </div>
             <div className={styles.pageText__header}>
               <h2>Telephone</h2>
               <div div className={styles.pageText__passage}>
-                <p>+234 080 2475 9034</p>
+                <span>+234 080 2475 9034</span>
               </div>
             </div>
             <div className={styles.pageText__header}>
               <h2>Email</h2>
               <div div className={styles.pageText__passage}>
-                <p>Fakeemail2@gmail.com</p>
+                <span>Fakeemail2@gmail.com</span>
               </div>
             </div>
           </div>
           <div className={styles.pageText__header}>
             <h2>Search Our Site</h2>
             <div className={styles.pageText__passage}>
-              <p>
+              <span>
                 Before contacting us, you may like to try this site’s ‘search’
                 tool or use the site map to find out more about our business. If
                 you do not find the information you are looking for, please
                 contact us via these routes.
-              </p>
+              </span>
             </div>
 
             <h2>Media</h2>
             <div className={styles.pageText__passage}>
-              <p>
+              <span>
                 For media enquiries, please send an email fakeemail@johndoe.com
                 and a member of our team will contact you.
-              </p>
+              </span>
             </div>
             <h2>Enquiries About Our Operations</h2>
             <div className={styles.pageText__passage}>
-              <p>
+              <span>
                 For enquiries about operations, please send an email
                 info@first-epdc.com and a member of our team will contact you.
-              </p>
+              </span>
             </div>
           </div>
         </div>
