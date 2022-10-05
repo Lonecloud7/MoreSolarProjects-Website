@@ -58,7 +58,7 @@ const Operations = () => {
           </div>
         </div>
         <div className={styles.pageText__passage}>
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
             dolorem eum, harum quisquam quam quo nobis consequatur aliquid
             eligendi sapiente illo? Veniam ipsum recusandae ipsa veritatis
@@ -70,7 +70,7 @@ const Operations = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
               nemo veniam temporibus odio ipsam. Similique, aliquam numquam.
             </b>
-          </p>
+          </span>
         </div>
       </div>
     </Layout>

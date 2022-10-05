@@ -38,7 +38,7 @@
     font-size: $font-size;
   }
 
-  &__textFlex{
+  &__textFlex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,12 @@
       }
       p {
         color: $font-color-text;
+        font-size: 16px;
+      }
+      @include breakpoint-md(md) {
+        p {
+          font-size: $font-size;
+        }
       }
     }
     &__imgContainer {
@@ -187,7 +193,7 @@
   a {
     text-decoration: none;
     color: $font-color-active;
-    font-size: larger;
+    font-size: $font-size;
   }
 }
 
@@ -232,7 +238,7 @@
     }
     span {
       color: $font-color-text;
-      font-size: $font-size;
+      font-size: 16px;
       b {
         font-style: italic;
       }
