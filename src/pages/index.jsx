@@ -1,11 +1,13 @@
 import * as React from "react"
+import { useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.scss"
 import PageCard from "../components/Page Card/PageCard"
 import Slideshow2 from "../components/Slideshow/Slideshow"
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
+import emailjs from "@emailjs/browser"
 
 const IndexPage = () => {
   //EFFECT ATTEMPT TO SWITCH BTW 2 HERO COMPONENTS
@@ -37,6 +39,30 @@ const IndexPage = () => {
   //     setValue(true)
   //   }
   // }, [size.width])
+
+  const form = useRef()
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        "service_yfoiw49",
+        "template_86iijoq",
+        form.current,
+        "IPOrNQQW6PAI-iSTr"
+      )
+      .then(
+        result => {
+          console.log(result.text)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+  }
 
   const pageName = "Home"
   return (
@@ -102,20 +128,64 @@ const IndexPage = () => {
         </div>
       </div>
 
+      {/* CONTACT US FORM! POWERED WITH EMAILJS SERVICE!! */}
+
       <div className={styles.newsletter}>
-        {/* <div className={styles.newsletter__overlay}></div> */}
-        <form onSubmit={e => e.preventDefault()} className={styles.newsinput}>
-          <div>
-            <h3>Subscribe To Newsletter</h3>
+        <div className={styles.newsletter__overlay}></div>
+        <div className={styles.newsletter__content}>
+          <div className={styles.newsletter__heading}>
+            <h3>Contact Us!</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam!
             </p>
-            <input type="text" placeholder="Your Email here" />
-            <br />
-            <br />
-            <input type="submit" className={styles.newsbtn} />
           </div>
-        </form>
+          <form
+            onSubmit={sendEmail}
+            className={styles.newsletter__form}
+            ref={form}
+          >
+            {/* <div>
+              Fields marked with an <span>*</span> are required
+            </div> */}
+            <label>
+              Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter full name"
+              name="name"
+              id={"textArea"}
+              required
+              pattern="^[A-Za-z0-9]{1,20}$"
+            />
+            <span>error email message</span>
+            <label>
+              Email
+            </label>
+            <input
+              type="email"
+              placeholder="example@example.com"
+              name="user_email"
+              id="textArea"
+              required
+            />
+            <span>error email message</span>
+            <label>
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Enter Message"
+              id="textArea"
+              required
+              pattern="^[A-Za-z0-9]{10,200}$"
+            />
+            <span>error email message</span>
+
+            <input type="submit" value="Send" className={styles.newsbtn} />
+          </form>
+        </div>
       </div>
     </Layout>
   )

@@ -37,17 +37,4 @@
       }
     }
   }
-
-  button {
-    padding: 10px 10px;
-    outline: none;
-    background-color: $font-color_dark;
-    border: 2px solid white;
-    color: white;
-    border-radius: 10px;
-    font-size: $font-size;
-  }
-
-  @include breakpoint-md(md) {
-  }
 }

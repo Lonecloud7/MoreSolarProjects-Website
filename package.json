@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "bootstrap": "^5.2.1",
     "gatsby": "^4.23.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",

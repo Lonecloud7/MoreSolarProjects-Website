@@ -6,6 +6,10 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Slideshow = () => {
   return (
+
+    // FIRST LAYER IS CONTENT, SECOND IS OVERLAY AND NEXT IS THE SLIDESHOW
+
+    // STATIC IMAGE WAS USED BECAUSE ITS EASIER TO MANIPULATE THE SIZE AND MAKE IT RESPONSIVE
     <div className={slideStyles2.Slideshow}>
       <div className={slideStyles2.Slideshow__overlay}></div>
       <div className={slideStyles2.Slideshow__backgroundImg}>
