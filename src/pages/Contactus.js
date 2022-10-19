@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader/PageHeader"
 import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
+import Newsletter from "../components/Newsletter/Newsletter"
 // import Slideshow from "../components/Slideshow/Slideshow"
 
 const Contactus = () => {
@@ -68,6 +69,8 @@ const Contactus = () => {
           </div>
         </div>
       </div>
+
+      <Newsletter />
       {/* <Slideshow /> */}
     </Layout>
   )
