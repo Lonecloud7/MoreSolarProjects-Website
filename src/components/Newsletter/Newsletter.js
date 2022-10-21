@@ -62,11 +62,11 @@ function Newsletter() {
               name="name"
               id={"textArea"}
               required
-              pattern="^[A-Za-z0-9]{1,20}$"
+              pattern="^[A-Za-z0-9]{1,20}{/\s/}$"
               onBlur={handleFocus}
-              focused={focused}
+              focused={focused.toString()}
             />
-            <span>error email message</span>
+            <span>Name should be 1-20 characters and should'nt include any special character.</span>
             <label>Email</label>
             <input
               type="email"
@@ -75,9 +75,9 @@ function Newsletter() {
               id="textArea"
               required
               onBlur={handleFocus}
-              focused={focused}
+              focused={focused.toString()}
             />
-            <span>error email message</span>
+            <span>Email should be valid.</span>
             <label>Message</label>
             <textarea
               name="message"
@@ -87,9 +87,9 @@ function Newsletter() {
               required
               pattern="^[A-Za-z0-9]{10,200}$"
               onBlur={handleFocus}
-              focused={focused}
+              focused={focused.toString()}
             />
-            <span>error email message</span>
+            <span>Name should be 10-200 characters.</span>
 
             <input type="submit" value="Send" className={styles.newsbtn} />
           </form>

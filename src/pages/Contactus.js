@@ -5,7 +5,6 @@ import * as styles from "../components/index.module.scss"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
 import Newsletter from "../components/Newsletter/Newsletter"
-// import Slideshow from "../components/Slideshow/Slideshow"
 
 const Contactus = () => {
   const pageName = "Contact us"
@@ -71,7 +70,6 @@ const Contactus = () => {
       </div>
 
       <Newsletter />
-      {/* <Slideshow /> */}
     </Layout>
   )
 }
