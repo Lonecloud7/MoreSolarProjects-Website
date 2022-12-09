@@ -39,7 +39,7 @@ const IndexPage = () => {
   //   if (size.width > 768 && value == false) {
   //     setValue(true)
   //   }
-  // }, [size.width])
+  // }, [size.width])s
 
 
   const pageName = "Home"
