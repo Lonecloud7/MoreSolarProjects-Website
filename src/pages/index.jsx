@@ -30,7 +30,7 @@ const IndexPage = () => {
   //   window.addEventListener("resize", handleSizeChange)
 
   //   return () => window.removeEventListener("resize", handleSizeChange)
-  // }, [])s
+  // }, [])
 
   // useEffect(() => {
   //   if (size.width < 768 && value) {
