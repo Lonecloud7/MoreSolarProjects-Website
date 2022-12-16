@@ -57,7 +57,7 @@ const IndexPage = () => {
           padding: `var(--size-gutter)`,
         }}
       ></div>
-      <div className={styles.FlexCard}>
+      <div className={styles.FlexCard}>s
         <div className={styles.FlexCard__content}>
           <div className={styles.FlexCard__textFlex}>
             <div className={styles.FlexCard__content__text}>
