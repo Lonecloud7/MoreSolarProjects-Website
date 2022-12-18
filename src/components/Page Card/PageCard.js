@@ -35,7 +35,7 @@ const PageCard = () => {
       url: "/Leadership",
       imgUrl: data.allFile.edges[1].node,
       description:
-        "A collections of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+        "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
     },
     // {
     //   text: "Contact us",
